@@ -8,7 +8,7 @@ st.write(
     "This app uses **Unsupervised Machine Learning** (One-Hot Encoding + Cosine Similarity) "
     "to recommend services based on your preferences.")
 
-df = pd.read_csv("/content/service_recommendation_data (1).csv")
+df = pd.read_csv("service_recommendation_data (1).csv")
 
 feature_cols = ["Target_Business_Type","Price_Category","Language_Support","Location_Area"]
 
@@ -57,3 +57,4 @@ if st.sidebar.button("Recommend Services"):
 
 else:
     st.info("Choose options in the sidebar and press **Recommend Services**.")
+
